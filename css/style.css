@@ -1,0 +1,456 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+/* ------------- MOBILE FIRST SITE DESIGN ------------*/
+
+
+/* ----- Global Styles ------- */
+body {
+    background-color: #fff;
+    font-family: 'Jost', sans-serif;
+    color: #151414;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+h1 {
+    font-family: 'Noto Serif JP', serif;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+h3 {
+    color: #FF6666;
+    margin-bottom: 0;
+}
+
+/* -------- Header Section ---------*/
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+}
+
+.logo img {
+    padding: 2rem;
+    border-image-source: linear-gradient(rgb(153, 204, 204), rgb(255, 204, 51) 50%, rgb(255, 102, 102));
+    border-image-slice: 1;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    background: #fff;
+    margin: 20px;
+}
+
+header h2 {
+    font-size: 2rem;
+    color: #151414;
+}
+
+/* ------- Intro Section -----------*/
+
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+  
+.intro p {
+    font-size: 1.35rem;
+    color: #151414;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hero {
+    background-image: url(../img/desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* -------- Details Section --------*/
+
+.details {
+    background-color: #f2f2f2;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    line-height: 1.5em;
+    font-size: 1em;
+    padding: 10px;
+    border-bottom: 1px solid #99CCCC;
+}
+
+.detail-item p {
+    text-align: justify;
+    margin-top: .3rem;
+}
+
+#div-1 {
+    border-top: 1px solid #99CCCC;
+}
+
+.details i {
+    font-size: 8rem;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#div-1 i {
+    color: #99CCCC;
+}
+
+#div-2 i {
+    color: #8cd98c;
+}
+
+#div-3 i {
+    color: #FFCC33;
+}
+
+/* --------- Contact Section ---------*/
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: #f2f2f2;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+.button-section {
+    text-align: center;
+}
+
+button {  
+    border-image-source: linear-gradient(rgb(153, 204, 204), rgb(255, 204, 51) 50%, rgb(255, 102, 102));
+    border-image-slice: 1;
+    background-color: #fff;
+    padding: 18px 30px;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+}
+  
+span {
+    text-align: center;
+    letter-spacing: .07rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+  
+button:hover {
+    background-image: linear-gradient(to right, #99CCCC 0%, #FFCC33 51%, #FF6666 100%);
+}
+
+button a {
+    color: #151414;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: white;
+}
+
+
+/* --------- Footer Section --------- */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #99CCCC;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.social li {
+    padding: 10px;
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FF6666;
+}
+
+footer a:hover {
+    color: #FFCC33;
+}
+
+
+/*--------- MEDIA QUERY BREAKPOINT STYLES ---------*/
+
+
+/* --------- TABLET ------------*/
+@media all and (min-width: 768px) {
+    body {
+      padding: 1em;
+    }
+
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    footer p {
+      max-width: 80%;
+      text-align: center;
+    }
+
+}
+
+
+/* -------- DESKTOP --------------*/
+@media (min-width: 1024px) {
+    
+    .hero {
+      width: 100%;
+      height: 60vh;
+    }
+
+    h1 {
+      width: 60%;
+      font-size: 4rem;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 8rem;
+    }
+
+    .intro {
+      border-bottom: 1px solid #99CCCC;
+    }
+    
+    .intro-details {
+      width: 60%;
+      padding: 2rem;
+    }
+
+    .intro-details p {
+      text-align: justify;
+      font-size: 1.75rem;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+    }
+    
+    .detail-item {
+      flex-basis: 30%;
+      border-bottom: none;
+    }
+
+    #div-1 {
+      border-top: none;
+    }
+
+    #div-2 {
+      border-right: 1px solid #99CCCC;
+      border-left: 1px solid #99CCCC;
+      padding-right: 1.5rem;
+    
+    }
+
+    #div-1, #div-2 {
+        padding-left: 1.5rem;
+    }
+
+    #div-3 {
+        padding-right: 1.5rem;
+    }
+
+    .contact {
+      border-top: 1px solid #99CCCC;
+    }
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+  
