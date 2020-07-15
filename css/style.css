@@ -66,13 +66,15 @@ body {
     background-color: #fff;
     font-family: 'Jost', sans-serif;
     color: #151414;
+    margin: 0;
 }
 
 .flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 10px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 h1 {
@@ -84,7 +86,11 @@ h1 {
 
 h3 {
     color: #FF6666;
-    margin-bottom: 0;
+    margin-bottom: .5rem;
+}
+
+p {
+    line-height: 150%;
 }
 
 /* -------- Header Section ---------*/
@@ -94,8 +100,8 @@ header {
     justify-content: center;
     flex-flow: row wrap;
     width: 100%;
-    margin-top: 20px;
     background-color: #f2f2f2;
+    padding: 2rem 0;
 }
 
 .logo img {
@@ -109,10 +115,6 @@ header {
     margin: 20px;
 }
 
-header h2 {
-    font-size: 2rem;
-    color: #151414;
-}
 
 /* ------- Intro Section -----------*/
 
@@ -122,11 +124,11 @@ header h2 {
     flex-flow: row wrap;
 }
   
-.intro p {
+.intro-details p {
     font-size: 1.35rem;
     color: #151414;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 2rem 1rem;
+    text-align: justify;
 }
 
 .hero {
@@ -140,6 +142,8 @@ header h2 {
 
 .details {
     background-color: #f2f2f2;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .detail-item {
@@ -148,7 +152,7 @@ header h2 {
     flex-flow: row wrap;
     line-height: 1.5em;
     font-size: 1em;
-    padding: 10px;
+    padding: 2rem 1rem;
     border-bottom: 1px solid #99CCCC;
 }
 
@@ -187,8 +191,7 @@ header h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    padding-bottom: 30px;
+    padding: 2rem 1rem;
     background-color: #f2f2f2;
 }
 
@@ -197,10 +200,12 @@ header h2 {
     font-weight: bold;
     text-align: center;
     font-style: italic;
+    margin-top: 0;
 }
 
 .button-section {
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 button {  
@@ -217,7 +222,7 @@ span {
     text-align: center;
     letter-spacing: .07rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: bold;
 }
   
 button:hover {
@@ -237,7 +242,6 @@ button a:hover {
 /* --------- Footer Section --------- */
 
 footer {
-    width: 100%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -251,7 +255,6 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    width: 100%;
 }
 
 .social ul {
@@ -274,35 +277,67 @@ footer a:hover {
     color: #FFCC33;
 }
 
+footer p {
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
 
 /*--------- MEDIA QUERY BREAKPOINT STYLES ---------*/
 
 
 /* --------- TABLET ------------*/
 @media all and (min-width: 768px) {
-    body {
-      padding: 1em;
-    }
 
     header {
       flex-direction: column;
       text-align: center;
     }
 
-    footer p {
-      max-width: 80%;
-      text-align: center;
+    .hero {
+      width: 100%;
+      height: 40vh;
     }
 
+    h1 {
+      width: 60%;
+      font-size: 3rem;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 8rem;
+    }
+      
+    .intro-details {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }  
+    
+    .details p {
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+
+    .button-section {
+      padding-bottom: 0;
+    }
+
+    footer {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 
 /* -------- DESKTOP --------------*/
-@media (min-width: 1024px) {
+@media all and (min-width: 1024px) {
     
     .hero {
       width: 100%;
-      height: 60vh;
+      height: 70vh;
     }
 
     h1 {
@@ -319,12 +354,12 @@ footer a:hover {
     
     .intro-details {
       width: 60%;
-      padding: 2rem;
     }
 
     .intro-details p {
-      text-align: justify;
       font-size: 1.75rem;
+      padding: 4rem;
+      margin: 3rem;
     }
 
     .details {
@@ -334,7 +369,7 @@ footer a:hover {
     }
     
     .detail-item {
-      flex-basis: 30%;
+      flex-basis: 28%;
       border-bottom: none;
     }
 
@@ -345,20 +380,23 @@ footer a:hover {
     #div-2 {
       border-right: 1px solid #99CCCC;
       border-left: 1px solid #99CCCC;
-      padding-right: 1.5rem;
-    
+      padding-right: 1.75rem;
     }
 
-    #div-1, #div-2 {
-        padding-left: 1.5rem;
-    }
-
-    #div-3 {
-        padding-right: 1.5rem;
+    #div-1, #div-2, #div-3 {
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
     }
 
     .contact {
       border-top: 1px solid #99CCCC;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    footer {
+      width: 100%;
+      flex-direction: column;
     }
 }
 
