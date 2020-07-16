@@ -125,6 +125,14 @@ header {
 
 /* ------- Intro Section -----------*/
 
+.hero {
+    background-image: url(../img/desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+}
+
 .intro {
     display: flex;
     justify-content: center;
@@ -138,22 +146,14 @@ header {
     text-align: justify;
 }
 
-.hero {
-    background-image: url(../img/desktop.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40vh;
-}
-
-
-/* -------- Details Section --------*/
-
 .intro-details {
     background-color: #f2f2f2;
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+
+/* -------- Details Section --------*/
 
 .detail-item {
     display: flex;
@@ -175,30 +175,10 @@ header {
     border-top: 1px solid #99CCCC;
 }
 
-.details i {
-    font-size: 8rem;
-    padding: 20px;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
-#div-1 i {
-    color: #99CCCC;
-}
-
-#div-2 i {
-    color: #8cd98c;
-}
-
-#div-3 i {
-    color: #FFCC33;
-}
-
 .responsive-images {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  
+    display: inline-block;
+    
   }
 
 
@@ -355,9 +335,12 @@ footer p {
 }
 
 
-/* -------- DESKTOP --------------*/
+/* -------- DESKTOP STYLING --------------*/
 @media all and (min-width: 1024px) {
     
+
+/*--------- INTRO SECTION --------*/
+
     .hero {
       width: 100%;
       height: 70vh;
@@ -382,20 +365,26 @@ footer p {
       justify-content: center;
     }
 
+
+    /*--------- DETAILS SECTION --------*/
+
     .details {
       display: flex;
-      justify-content: space-between;
-      flex-flow: row wrap;
+      justify-content: center;
+      flex-wrap: nowrap;
     }
-    
+
     .detail-item {
-      flex-basis: 30%;
+      
+      
+      width: 33%;
       border-bottom: none;
+     
     }
 
     #div-1 {
-        border-top: none;
-        padding-left: 1.5rem;
+      border-top: none;
+      padding-left: 1.5rem;
     }
 
     #div-2 {
@@ -407,11 +396,17 @@ footer p {
       padding-right: 1.5rem;
     }
 
+    .detail-item p {
+      padding: 1rem;
+    }
+/*--------- CONTACT SECTION ----------*/
     .contact {
       border-top: 1px solid #99CCCC;
       padding-top: 4rem;
       padding-bottom: 4rem;
     }
+
+/*--------- FOOTER ----------------*/
 
     footer {
       width: 100%;
