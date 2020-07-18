@@ -175,12 +175,6 @@ header {
     border-top: 1px solid #99CCCC;
 }
 
-.responsive-images {
-  
-    display: inline-block;
-    
-  }
-
 
 /* --------- Contact Section ---------*/
 
@@ -310,8 +304,12 @@ footer p {
     }  
 
     .detail-item {
-        padding-top: 3rem;
+      padding-top: 3rem;
     }
+
+    .detail-item img {
+      width: 80vw;
+      }
 
     .details p {
       font-size: 1.25rem;
@@ -329,8 +327,8 @@ footer p {
     }
 
     footer {
-        width: 100%;
-        flex-direction: column;
+      width: 100%;
+      flex-direction: column;
     }
 }
 
@@ -338,6 +336,7 @@ footer p {
 /* -------- DESKTOP STYLING --------------*/
 @media all and (min-width: 1024px) {
     
+   
 
 /*--------- INTRO SECTION --------*/
 
@@ -371,15 +370,16 @@ footer p {
     .details {
       display: flex;
       justify-content: center;
-      flex-wrap: nowrap;
+      flex-basis: 100%;
     }
 
     .detail-item {
-      
-      
-      width: 33%;
+      flex-basis: 33%;
       border-bottom: none;
-     
+    }
+
+    .detail-item img {
+      width: 30vw;
     }
 
     #div-1 {
@@ -399,6 +399,7 @@ footer p {
     .detail-item p {
       padding: 1rem;
     }
+
 /*--------- CONTACT SECTION ----------*/
     .contact {
       border-top: 1px solid #99CCCC;
