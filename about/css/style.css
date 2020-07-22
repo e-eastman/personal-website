@@ -63,7 +63,7 @@
  
  /* ----- Global Styles ------- */
  html {
-     font-size: 18px;
+     font-size: 16px;
  }
  
  body {
@@ -72,7 +72,7 @@
      color: #151414;
      margin: 0;
  }
- 
+
  .flex-container {
      display: flex;
      flex-flow: row wrap;
@@ -83,12 +83,11 @@
  
  h1 {
      font-family: 'Noto Serif JP', serif;
-     color: #fff;
-     font-size: 2.25rem;
+     color: #151414;
+     font-size: 2.5rem;
      text-align: center;
-     max-width: 80%;
      margin: 0 auto;
-     padding-top: 2.5rem;
+     padding-bottom: 2rem;
  }
  
  h3 {
@@ -122,16 +121,58 @@
      margin: 20px;
  }
  
- .hero {
-    width: 100%;
-    height: 40vh;
+/* -------- Hero Image ------------*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
 }
 
+figure {
+    margin-top: 0;
+}
 
- /* ------- About Section -----------*/
+figure img {
+    height: 40vh;
+    margin-top: 0;
+}
+
+.caption {
+    font-size: small;
+    margin-top: 0;
+    margin-left: 2rem;
+    padding-left: 2rem;
+}
+
+ /* ------- About Section ---------*/
  
+ .about {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #99CCCC;
+    width: 100%;
+}
+
+.headshot {
+    padding-top: 2rem;
+}
+
+.about-details {
+    max-width: 100%;
+    margin: 2rem 1rem;
+    
+   
+}
+
+.about-details p {
+    font-size: 1.125rem;
+    text-align: justify;
+}
  
- 
+
  /* --------- Contact Section ---------*/
  
  .contact {
@@ -195,6 +236,7 @@
      padding-left: 10px;
      padding-right: 10px;
      background-color: #99CCCC;
+     width: 100%;
  }
  
  .social {
@@ -262,9 +304,7 @@
  
 /*--------- ABOUT SECTION --------*/
  
-.about div {
-    
-}
+ 
 
 /*--------- CONTACT SECTION ----------*/
      .contact {
