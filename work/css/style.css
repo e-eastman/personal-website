@@ -73,7 +73,7 @@
      margin: 0;
  }
  
- .flex-container {
+ main {
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
@@ -87,15 +87,16 @@
      text-align: center;
      max-width: 80%;
      margin: 0 auto;
-     padding-top: 2.5rem;
+     padding-top: 2rem;
  }
  
  h2 {
      font-family: 'Noto Serif JP', serif;
-     font-size: 1.25rem;
+     font-size: 1.125rem;
      font-weight: 400;
      color: #151414;
      text-align: center;
+     padding-bottom: 3rem;
  }
  
  h3 {
@@ -161,7 +162,7 @@
 .testimonials {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 blockquote {
@@ -176,12 +177,22 @@ blockquote {
 }
  
  
- /* --------- Contact Section ---------*/
+/*---------- Work Section -----------*/
+
+.portfolio {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* --------- Contact Section ---------*/
  
  .contact {
      display: flex;
      justify-content: center;
      flex-direction: column;
+     width: 100%;
      padding: 2rem 1rem;
      background-color: #f2f2f2;
  }
@@ -282,18 +293,11 @@ blockquote {
      }
  
      h1 {
-       width: 60%;
+   
        font-size: 3rem;
        text-align: center;
        margin: 0 auto;
-       padding-top: 8rem;
      }
-     
-     h2 {
-         font-size: 1.375rem;
-     }
- 
-  
  
      h3 {
        font-size: 1.875rem;
@@ -309,8 +313,23 @@ blockquote {
        flex-direction: column;
      }
  }
+
+
+ /*---------- WORK Section -------------*/
+
+ .portfolio {
+    margin-bottom: 4rem; 
+ }
+
+ .portfolio p {
+    font-size: 1.125rem;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    background-color: #FFCC33;
+}
  
- 
+
  /* -------- DESKTOP STYLING --------------*/
  @media all and (min-width: 1024px) {
      
@@ -328,24 +347,34 @@ blockquote {
        font-size: 4rem;
        text-align: center;
        margin: 0 auto;
-       padding-top: 12rem;
+       padding-top: 6rem;
+       padding-bottom: 4rem;
      }
  
      h2 {
        font-size: 2.25rem;
-       width: 50%;
+       
      }
  
      h3 {
          font-size: 1.7rem;
      }
 
-/*--------- Testimonials Section ------*/
-     blockquote {
-        width: 30%;
+  
+
+/*--------- TESTIMONIALS Section ------*/
+     
+    
+
+    blockquote {
+        width: 50%;
         font-size: 1.25rem;
+        margin: 0 auto;
      }
 
+     .quote {
+        margin-bottom: 4rem; 
+     }
 
 
  /*--------- CONTACT SECTION ----------*/
@@ -355,6 +384,7 @@ blockquote {
        padding-bottom: 4rem;
      }
  
+
  /*--------- FOOTER ----------------*/
  
      footer {
