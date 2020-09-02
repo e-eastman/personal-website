@@ -89,23 +89,7 @@
      background-color: rgba(255,255,255,.8);
      padding-right: 1rem;
      padding-left: 1rem;
- }
- 
- h2 {
-     font-family: 'Noto Serif JP', serif;
-     font-size: 1.5rem;
-     font-weight: 600;
-     color: #151414;
-     text-align: center;
-     padding-bottom: 1rem;
-     margin-top: 2rem;
- }
- 
- h3 {
-     font-weight: 400;
-     color: #FF6666;
-     font-size: 1.25rem;
-     margin-bottom: .5rem;
+     border: 2px solid black;
  }
  
  p {
@@ -300,15 +284,6 @@ blockquote {
        padding: 3rem;
      }
  
-     h2 {
-         font-size: 2rem;
-     }
-
-     h3 {
-       font-size: 1.875rem;
-       line-height: 2.5rem;
-     }
- 
      blockquote {
          font-size: 1.125rem;
      }
@@ -340,18 +315,10 @@ blockquote {
        text-align: center;
        padding-top: 4rem;
        padding-bottom: 4rem;
-     }
- 
-     h2 {
-       font-size: 2.25rem;
-     }
- 
-     h3 {
-         font-size: 1.7rem;
+       border: 3px solid black;
      }
 
   
-
 /*--------- TESTIMONIALS ------*/
 
     blockquote {
