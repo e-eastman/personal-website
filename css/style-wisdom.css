@@ -213,6 +213,7 @@
        display: flex;
        flex-direction: column;
        margin-top: 4rem;
+       padding-left: 2rem;
     }
 
 
@@ -234,7 +235,7 @@
 
 
  /* -------- DESKTOP STYLING --------------*/
- @media all and (min-width: 1024px) {
+ @media all and (min-width: 1320px) {
      
     p, a {
         font-size: 1.125rem;
@@ -243,7 +244,7 @@
  /*--------- INTRO --------*/
  
     .intro {
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: row;
         margin-top: 4rem;
@@ -253,8 +254,15 @@
 
     .mockup {
         margin-top: 4rem;
+        padding-left: 3rem;
     }
  
+
+    .details {
+        padding-left: 3rem;
+        
+    }
+
  /*--------- FOOTER ----------------*/
  
      footer {
@@ -263,7 +271,12 @@
      }
  }
  
- 
+ @media all and (min-width: 1500px) {
+    .details {
+        padding-right: 6rem;
+    }
+
+ }
  
  /* ==========================================================================
     Helper classes
