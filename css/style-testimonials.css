@@ -280,8 +280,8 @@ blockquote {
      }
  
      h1 {
-       font-size: 5rem;
-       padding: 3rem;
+       font-size: 4rem;
+       padding: 2rem;
      }
  
      blockquote {
@@ -311,6 +311,7 @@ blockquote {
      }
  
      h1 {
+       font-size: 4rem;
        width: 60%;
        text-align: center;
        padding-top: 4rem;

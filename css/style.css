@@ -66,6 +66,10 @@ html {
     font-size: 16px;
 }
 
+main {
+    width: 100%;
+}
+
 body {
     background-color: #fff;
     font-family: 'Jost', sans-serif;
@@ -81,32 +85,44 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+.name-1 {
     font-family: 'Noto Serif JP', serif;
-    color: #fff;
-    font-size: 2.25rem;
-    text-align: center;
-    max-width: 80%;
-    margin: 0 auto;
-    padding-top: 2.5rem;
+}
+
+.gradient {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    letter-spacing: .8rem;
+    background: linear-gradient(to top, rgb(153, 204, 204)40%, rgb(255, 204, 51), rgb(255, 102, 102));
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
 }
 
 h2 {
-    font-size: 1.375rem;
+    font-size: 1.75rem;
     font-weight: 400;
     color: #151414;
+    margin: 0;
 }
 
 h3 {
-    font-weight: 400;
+    font-weight: 500;
     color: #FF6666;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     margin-bottom: .5rem;
+    letter-spacing: .25rem;
 }
 
 p {
     font-weight: 300;
     line-height: 150%;
+    font-size: 1.25rem;
+    padding-top: 1rem;
 }
 
 a {
@@ -119,92 +135,67 @@ a:hover {
 }
 
 
-/* -------- Header Section ---------*/
 
-header {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    width: 100%;
-    background-color: #f2f2f2;
-    padding: 2rem 0;
+/* ------- Main Section -----------*/
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
 }
-
-.logo img {
-    padding: 2rem;
-    border-image-source: linear-gradient(rgb(153, 204, 204), rgb(255, 204, 51) 50%, rgb(255, 102, 102));
-    border-image-slice: 1;
-    border-width: 2px;
-    border-style: solid;
-    text-align: center;
-    background: #fff;
-    margin: 20px;
+  
+.company {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    text-align: left;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
+  
+  .tagline {
+    grid-column: 2;
+    grid-row: 1/4;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+  
+  .intro {
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .links {
+    grid-column: 1;
+    grid-row: 5;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+  }
 
-
-/* ------- Intro Section -----------*/
-
-.hero {
-    background-image: url(../img/desktop.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40vh;
-}
-
-.intro {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
-.intro-details {
-    background-color: #f2f2f2;
-    padding: 2rem;
-    width: 100%;
-    text-align: justify;
-}
-
-
-/* -------- Details Section --------*/
-
-.detail-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    line-height: 1.5em;
-    font-size: 1em;
-    padding: 2rem 1rem;
-    border-bottom: 1px solid #99CCCC;
-}
-
-.detail-item p {
-    text-align: justify;
-    margin-top: .3rem;
-}
-
-#div-1 {
-    border-top: 1px solid #99CCCC;
-}
-
+  .social {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+  }
 
 /* --------- Contact Section ---------*/
-
 .contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 2rem 1rem;
     background-color: #f2f2f2;
+    border-top: 1px solid #99CCCC;
 }
 
 .contact p {
     font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    font-style: italic;
+    font-weight: 400;
     margin-top: 0;
+    text-align: center;
 }
 
 .button-section {
@@ -216,7 +207,7 @@ button {
     border-image-source: linear-gradient(rgb(153, 204, 204), rgb(255, 204, 51) 50%, rgb(255, 102, 102));
     border-image-slice: 1;
     background-color: #fff;
-    padding: 18px 30px;
+    padding: 18px 20px;
     border-style: solid;
     border-width: 2px;
     cursor: pointer;
@@ -224,9 +215,9 @@ button {
   
 span {
     text-align: center;
-    letter-spacing: .07rem;
-    font-size: 1rem;
-    font-weight: bold;
+    letter-spacing: .08rem;
+    font-size: 1.125rem;
+    font-weight: 500;
 }
   
 button:hover {
@@ -246,9 +237,7 @@ button a:hover {
 /* --------- Footer Section --------- */
 
 footer {
-    display: flex;
     justify-content: center;
-    flex-flow: row wrap;
     padding-left: 10px;
     padding-right: 10px;
     background-color: #99CCCC;
@@ -265,6 +254,7 @@ footer {
     display: flex;
     justify-content: space-around;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 .social li {
@@ -274,8 +264,9 @@ footer {
 
 footer p {
     text-align: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top:0;
 }
 
 /*--------- MEDIA QUERY BREAKPOINT STYLES ---------*/
@@ -284,154 +275,171 @@ footer p {
 /* --------- TABLET ------------*/
 @media all and (min-width: 768px) {
 
-    header {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .hero {
-      width: 100%;
-      height: 50vh;
-    }
-
     h1 {
-      width: 60%;
-      font-size: 3rem;
-      text-align: center;
-      margin: 0 auto;
-      padding-top: 8rem;
+        font-size: 7.25rem;
+        margin-top: 0;
+    }
+  
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 500;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+  
+    h3 {
+        font-size: 1.7rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+  
+    p {
+        font-size: 1.5rem;
+    }
+
+    .contact p {
+        font-weight: 500;
+    }
+
+    footer p {
+        font-size: 1.125rem;
+    }
+
+    .gradient {
+        background: linear-gradient(to top, rgb(153, 204, 204)25%, rgb(255, 204, 51), rgb(255, 102, 102));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr .25fr 1fr 1fr;
+        grid-template-rows: .25fr 1fr .25fr .25fr;
+        grid-gap: 1rem;
+    }
+      
+    .company {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: left;
+    }
+      
+    .tagline {
+        grid-column: 2/5;
+        grid-row: 2/3;
+    }
+      
+    .intro {
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 3/4;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        margin-left: 3rem;
+    }
+      
+    .links {
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 4/5;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+  
+    .social {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: start;
     }
     
-    h2 {
-        font-size: 1.25rem;
-    }
-
-    .intro-details {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }  
-
-    .detail-item {
-      padding-top: 3rem;
-    }
-
-    .detail-item img {
-      width: 80vw;
-      }
-
-    .details p {
-      font-size: 1.25rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-
-    h3 {
-      font-size: 1.875rem;
-      line-height: 2.5rem;
-    }
-
-    .button-section {
-      padding-bottom: 0;
-    }
-
     footer {
-      width: 100%;
-      flex-direction: column;
-    }
+        width: 100%;
+        flex-direction: column;
+      }
 }
 
 
 /* -------- DESKTOP STYLING --------------*/
 @media all and (min-width: 1024px) {
     
-   
-
-/*--------- INTRO SECTION --------*/
-
-    .hero {
-      width: 100%;
-      height: 70vh;
-    }
-
     h1 {
-      width: 60%;
-      font-size: 4rem;
-      text-align: center;
-      margin: 0 auto;
-      padding-top: 12rem;
-    }
-
-    .intro {
-      border-bottom: 1px solid #99CCCC;
-    }
-
-    .intro-details {
-      padding: 6rem 4rem;
-      text-align: center;
-      display: flex;
-      justify-content: center;
+        font-size: 9rem;
+        margin-top: 0;
     }
 
     h2 {
-      font-size: 2.25rem;
-      width: 50%;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 0;
     }
 
     h3 {
-        font-size: 1.7rem;
+        font-size: 2.25rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
     }
 
-    /*--------- DETAILS SECTION --------*/
-
-    .details {
-      display: flex;
-      justify-content: center;
-      flex-basis: 100%;
+    p {
+        font-size: 1.875rem;
+        margin-top: 0;
     }
 
-    .detail-item {
-      flex-basis: 33%;
-      border-bottom: none;
+    .contact p {
+        font-size: 2rem;
+        font-weight: bold;
     }
 
-    .detail-item img {
-      width: 30vw;
+    footer p {
+        font-size: 1.25rem;
     }
 
-    #div-1 {
-      border-top: none;
-      padding-left: 1.5rem;
+    .gradient {
+        background: linear-gradient(to top, rgb(153, 204, 204)35%, rgb(255, 204, 51), rgb(255, 102, 102));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
-    #div-2 {
-      border-right: 1px solid #99CCCC;
-      border-left: 1px solid #99CCCC;
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr .25fr .5fr 1fr .5fr 1fr;
+        grid-template-rows: .25fr .75fr 1fr .5fr;
+        grid-gap: 1rem;
+    }
+    
+    .company {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        text-align: left;
+    }
+    
+    .tagline {
+        grid-column: 3;
+        grid-row: 2/4;
+    }
+    
+    .intro {
+        grid-column: 4/6;
+        grid-row: 3;
+    }
+    
+    .links {
+        grid-column: 4/5;
+        grid-row: 4;
+        margin-top: 4rem;
     }
 
-    #div-3 {
-      padding-right: 1.5rem;
-    }
-
-    .detail-item p {
-      padding: 1rem;
-    }
-
-/*--------- CONTACT SECTION ----------*/
     .contact {
-      border-top: 1px solid #99CCCC;
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+        grid-column: 3/5;
+        grid-row: 4;
+        align-self: end;
     }
 
-/*--------- FOOTER ----------------*/
-
-    footer {
-      width: 100%;
-      flex-direction: column;
+    .social {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: start;
     }
-}
-
-
 
 /* ==========================================================================
    Helper classes
