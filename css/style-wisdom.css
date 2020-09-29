@@ -58,7 +58,7 @@
  
  
  
- /* ------------- MOBILE FIRST SITE DESIGN ------------*/
+/* ------------- MOBILE FIRST SITE DESIGN ------------*/
  
  
  /* ----- Global Styles ------- */
@@ -85,15 +85,14 @@
     font-family: 'Noto Serif JP', serif;
     font-weight: 500;
     font-size: 2.5rem;
-
  }
  
  p {
      font-weight: 300;
      line-height: 150%;
- }
+}
  
-.bold {
+ .bold {
     font-weight: 500;
 }
 
@@ -116,7 +115,7 @@
      width: 100%;
      background-color: #f2f2f2;
      padding: 2rem 0;
- }
+}
  
  .logo img {
      padding: 2rem;
@@ -132,17 +131,17 @@
  
 /*---------- INTRO -----------*/
 
-.intro, .details {
+ .intro, .details {
     margin: 1.5rem;
-}
+ }
 
 
 /*--------- WORK -------------*/
 
-.work-sample {
+ .work-sample {
     margin-bottom: 2rem;
     background-color: #638C73;
-}
+ }
 
 
  /* --------- Footer Section --------- */
@@ -239,7 +238,7 @@
      
     p, a {
         font-size: 1.125rem;
-     }  
+    }  
  
  /*--------- INTRO --------*/
  
@@ -273,7 +272,7 @@
  
  @media all and (min-width: 1500px) {
     .details {
-        padding-right: 6rem;
+       padding-right: 6rem;
     }
 
  }
