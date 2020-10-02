@@ -70,17 +70,20 @@
      background-color: #fff;
      font-family: 'Jost', sans-serif;
      color: #151414;
-     margin: 0;
  }
  
  main {
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: center;
      width: 100%;
-     margin: 0 auto;
  }
  
+ .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
  h1 {
     font-family: 'Noto Serif JP', serif;
     font-weight: 500;
@@ -108,6 +111,9 @@
      color: #FFCC33;
  }
 
+ picture, .pictures {
+    margin: 0 auto;
+}
 
  /* -------- Header Section ---------*/
  
@@ -154,7 +160,8 @@ img {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: 2rem 1rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     background-color: #f2f2f2;
 }
 
@@ -242,11 +249,6 @@ button a:hover {
  /* --------- TABLET ------------*/
  @media all and (min-width: 768px) {
  
-     header {
-       flex-direction: column;
-       text-align: center;
-     }
- 
      p, a {
         font-size: 1.25rem;
      }
@@ -266,16 +268,17 @@ button a:hover {
        display: flex;
        flex-direction: column;
        margin-top: 4rem;
-       margin-right: 1.5rem;
-       margin-left: 1.5rem;
+       margin-right: 2rem;
+       margin-left: 2rem;
     }
-
 
  /*---------- WORK Section -------------*/
 
-
+    .projects {
+       margin-right: 2rem;
+       margin-left: 2rem;
+    }
 }
-
 
 
  /* -------- DESKTOP STYLING --------------*/
@@ -284,18 +287,19 @@ button a:hover {
     p, a {
         font-size: 1.125rem;
      }  
+
  
  /*--------- INTRO --------*/
  
-    .intro {
-        width: 90%;
+    .intro, .projects {
+        width: 70%;
         display: flex;
         flex-direction: row;
-        margin-top: 4rem;
         margin-bottom: 4rem;
+        margin: 0 auto;
+        margin-top: 4rem;
     }
     
-
     .intro-image {
         margin-top: 4rem;
         padding-left: 3rem;
@@ -306,6 +310,17 @@ button a:hover {
         padding-left: 3rem;
         
     }
+
+    .projects {
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    .pictures {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
  
 
