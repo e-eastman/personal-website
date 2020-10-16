@@ -154,32 +154,32 @@ a:hover {
     transform: rotate(180deg);
 }
   
-  .tagline {
+.tagline {
     grid-column: 2;
     grid-row: 1/4;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-  }
+}
   
-  .intro {
+.intro {
     grid-column: 1;
     grid-row: 4;
     margin-left: 2rem;
     margin-top: 2rem;
-  }
+}
   
-  .links {
+.links {
     grid-column: 1;
     grid-row: 5;
     margin-left: 2rem;
     margin-bottom: 4rem;
-  }
+}
 
-  .social {
+.social {
     grid-column: 1;
     grid-row: 1;
     align-self: start;
-  }
+}
 
 /* --------- Contact Section ---------*/
 .contact {
