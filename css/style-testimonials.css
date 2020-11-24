@@ -72,7 +72,8 @@
  
  body {
      background-color: #fff;
-     font-family: 'Jost', sans-serif;
+     font-family: futura-pt, sans-serif;
+     font-weight: 400;
      color: #151414;
      margin: 0;
  }
@@ -86,7 +87,7 @@
  }
  
  h1 {
-     font-size: 5rem;
+     font-size: 4rem;
      margin: 0;
      grid-column: 1;
      grid-row: 3;
@@ -105,7 +106,6 @@
  }
  
  p {
-     font-weight: 300;
      line-height: 150%;
      font-size: 1.125rem;
      padding-top: 1rem;
@@ -321,7 +321,7 @@ footer p {
 @media all and (min-width: 768px) {
  
     h1 {
-        font-size: 8rem;
+        font-size: 7rem;
         letter-spacing: .5rem;
         grid-row: 2/4
     }
@@ -367,6 +367,16 @@ footer p {
         grid-row: 3;
         margin: 0;
         margin-left: 13rem;
+    }
+
+    .intro {
+        grid-column: 2;
+        grid-row: 3;
+        margin-right: 2rem;
+    }
+
+    .intro p {
+        margin-left: 0;
     }
 
     .quote-1, .quote-2, .quote-3, .quote-4 {
@@ -420,8 +430,9 @@ footer p {
     }
 
     .intro {
-        grid-column: 3;
+        grid-column: 3/5;
         grid-row: 3;
+        margin-right: 8rem;
     }
 
    .quotes {
