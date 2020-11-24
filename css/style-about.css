@@ -400,6 +400,9 @@ footer p {
 
     .links {
         grid-column: 3;
+        text-align: left;
+        justify-self: left;
+        margin-left: 4rem;
     }
 
     .about-details{
