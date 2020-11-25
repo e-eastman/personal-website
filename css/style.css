@@ -121,9 +121,9 @@ h3 {
 }
 
 p {
-    font-weight: 400;
     line-height: 150%;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     padding-top: 1rem;
 }
 
@@ -144,7 +144,7 @@ a:hover {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3rem 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2rem 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
 }
   
@@ -261,6 +261,7 @@ footer p {
     text-align: center;
     padding: 1rem;
     font-size: 1rem;
+    font-weight: 400;
     margin-top:0;
 }
 
@@ -289,7 +290,7 @@ footer p {
     }
   
     p {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .contact p {
@@ -410,9 +411,10 @@ footer p {
     }
     
     .links {
-        grid-column: 4/5;
+        grid-column: 3/5;
         grid-row: 4;
         margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 
     .contact {
